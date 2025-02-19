@@ -1,4 +1,89 @@
-site_name: My Docs
-site_url: https://example.com
+site_name: BIM Prague (ČVUT + IPR)
+nav:
+  - Úvod: index.md
+  - Lokality: 
+      - Mapa: mapa.md
+      - Běžné budovy: lokality/bezne.md
+      - Významné budovy: lokality/vyznamne.md
+  - Data: data.md
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
 theme:
   name: material
+  custom_dir: overrides
+  favicon: material/cube-outline
+  icon:
+    annotation: material/plus-circle
+    logo: material/cube-outline
+  features:
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+  language: cs
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+extra:
+  social:
+    - icon: custom/ipr-logo
+      link: https://iprpraha.cz
+      name: IPR Praha
+    - icon: custom/praha-logo
+      link: https://praha.eu
+      name: město Praha
+    - icon: custom/cvut-logo
+      link: https://cvut.cz
+      name: ČVUT v Praze
+#copyright: made by vc&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2025
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.caret
+  - pymdownx.tilde
+
