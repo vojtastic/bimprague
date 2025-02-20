@@ -1,10 +1,7 @@
 site_name: BIM Prague (ČVUT + IPR)
 nav:
   - Úvod: index.md
-  - Lokality: 
-      - Mapa: mapa.md
-      - Běžné budovy: lokality/bezne.md
-      - Významné budovy: lokality/vyznamne.md
+  - Výběr budov: budovy.md
   - Data: data.md
 plugins:
   - search
