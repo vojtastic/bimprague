@@ -261,9 +261,26 @@ div.table_centered .md-typeset__scrollwrap {text-align: center;}
   /* } */
 
 
+/* CUSTOM FONT */
+/* =========== */
 
+@font-face {
+  font-family: "UnitPro"; 
+  font-weight: normal; 
+  font-style: normal;
+  src: url("../assets/fonts/UnitPro.otf");
+}
 
+@font-face {
+  font-family: "UnitPro"; 
+  font-weight: bold; 
+  font-style: normal;
+  src: url("../assets/fonts/UnitPro-Bold.otf");
+}
 
+:root {
+  --md-text-font: "UnitPro"; 
+}
 
 
 

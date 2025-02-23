@@ -4,9 +4,37 @@ hide:
   - toc
 ---
 
+<div class="grid cards narrow" style="margin-left:auto; margin-right:auto; text-align:center;" markdown>
+
+-   :fontawesome-solid-landmark:{ .lg } __Významné budovy__
+
+    výběr pražských pamětihodnotí
+
+    [:fontawesome-solid-angles-down:{.xl}](#vyznamne-budovy)
+    {align=center}
+
+-   :fontawesome-solid-building:{ .lg } __Běžné budovy__
+
+    výběr budov z testovací oblasti
+
+    [:fontawesome-solid-angles-down:{.xl}](#bezne-budovy)
+    {align=center}
+
+</div>
+
+<style>
+    @media screen and (min-width: 1120px) {
+        .grid.cards.narrow{
+            width: 60%;
+        }
+    }
+</style>
+
+<hr class=level-1>
+
 ## Významné budovy {align=center}
 
-<div class="grid cards" markdown>
+<div class="grid cards buildings" markdown>
 
 -   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Trojsk%C3%BD_z%C3%A1mek_1.jpg/640px-Trojsk%C3%BD_z%C3%A1mek_1.jpg){.no-filter}
 
@@ -318,7 +346,7 @@ hide:
 
 -   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NT_knihovna_Praha_2012_1.jpg/640px-NT_knihovna_Praha_2012_1.jpg){.no-filter}
 
-    __Národni technická knihovna__
+    __Národní technická knihovna__
     {align=center}
 
     [:custom-mapycz-logo:{.xl}](https://mapy.cz/zakladni?source=firm&id=203729){.map target="_blank" title="Mapy.cz"}&nbsp;&nbsp;&nbsp;
@@ -329,7 +357,7 @@ hide:
 
 -   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Budova_N%C3%A1rodn%C3%ADho_technick%C3%A9ho_muzea_na_Letn%C3%A9.jpg/640px-Budova_N%C3%A1rodn%C3%ADho_technick%C3%A9ho_muzea_na_Letn%C3%A9.jpg){.no-filter}
 
-    __Národni technické muzeum__
+    __Národní technické muzeum__
     {align=center}
 
     [:custom-mapycz-logo:{.xl}](https://mapy.cz/zakladni?source=base&id=1702208){.map target="_blank" title="Mapy.cz"}&nbsp;&nbsp;&nbsp;
@@ -483,9 +511,9 @@ Bertramka
 
 Kongresové centrum
 
-Národni technická knihovna
+Národní technická knihovna
 
-Národni technické muzeum
+Národní technické muzeum
 
 Obecní dům
 
@@ -507,7 +535,7 @@ oblast Zderaz + Podskalí
 
 ![](./assets/img_101.jpg){style="height:300px;" .no-filter}
 
-<div class="grid cards" markdown>
+<div class="grid cards buildings" markdown>
 
 -   ![](./assets/img_01.jpg){.no-filter}
 
@@ -546,49 +574,49 @@ oblast Zderaz + Podskalí
 
 
 <style>
-    .grid.cards li{
+    .grid.cards.buildings li{
         padding: 0px !important;
         border-radius: .3rem !important;
         overflow: hidden;
     }
-    .grid.cards img{
+    .grid.cards.buildings img{
         width: 100%;
         aspect-ratio: 16 / 9;
         object-fit: cover;
     }
-    .grid.cards .links{
+    .grid.cards.buildings .links{
         margin-top:.5rem;
         margin-bottom:1rem !important;
     }
-    .grid.cards li:has(.status-done){
+    .grid.cards.buildings li:has(.status-done){
         background-color: #dae8bc;
         color: #7ea037;
     }
-    .grid.cards li:has(.status-done) img{
+    .grid.cards.buildings li:has(.status-done) img{
         mix-blend-mode: overlay;
     }
-    .grid.cards li:has(.status-assigned){
+    .grid.cards.buildings li:has(.status-assigned){
         background-color: #e0e0e0;
         color: #999;
     }
-    .grid.cards li:has(.status-assigned) img{
+    .grid.cards.buildings li:has(.status-assigned) img{
         mix-blend-mode: overlay;
     }
 
-    .grid.cards .map,.grid.cards .trimble,.grid.cards .agol{
+    .grid.cards.buildings .map,.grid.cards .trimble,.grid.cards .agol{
         color: #000 !important;
     }
 
     /* .grid.cards a:hover{ */
         /* color: inherit; */
     /* } */
-    .grid.cards .map:hover{
+    .grid.cards.buildings .map:hover{
         color: #26b009 !important;
     }
-    .grid.cards .trimble:hover{
+    .grid.cards.buildings .trimble:hover{
         color: #005f9e !important;
     }
-    .grid.cards .agol:hover{
+    .grid.cards.buildings .agol:hover{
         color: #515ceb !important;
     }
 

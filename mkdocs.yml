@@ -2,7 +2,7 @@ site_name: BIM Prague (ČVUT + IPR)
 nav:
   - Úvod: index.md
   - Výběr budov: budovy.md
-  - Data: data.md
+  - Metodika modelování: metodika.md
 plugins:
   - search
   - glightbox:
